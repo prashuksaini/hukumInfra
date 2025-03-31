@@ -1,0 +1,492 @@
+/* Testimonials Section */
+.testimonials {
+    padding: 100px 0;
+    background: linear-gradient(rgba(27, 38, 59, 0.9), rgba(27, 38, 59, 0.9)), url('https://cdn.pixabay.com/photo/2015/03/30/19/23/shell-699945_1280.jpg') center/cover no-repeat fixed;
+    color: white;
+    text-align: center;
+}
+
+/* Testimonial Card with Glassmorphism Effect */
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    backdrop-filter: blur(15px); /* Glassmorphism blur effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.9); /* Light text color for visibility */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Client Image */
+.client-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.5); /* Subtle border for the image */
+    margin-bottom: 15px;
+}
+
+/* Client Info */
+.client-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.9); /* Light text color */
+}
+
+.client-info span {
+    color: rgba(255, 255, 255, 0.7); /* Subtle text color */
+    font-size: 0.9rem;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9); /* Light text color */
+    margin-bottom: 25px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* Quote Icon */
+.quote-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.2); /* Subtle transparent icon */
+}
+
+/* CTA Section with Glassmorphism Effect */
+.cta {
+    position: relative;
+    padding: 100px 0;
+    background: url('https://images.unsplash.com/photo-1603573712193-0a9e3db27381?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+                center center / cover no-repeat; /* Background image */
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cta .glass-panel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    backdrop-filter: blur(15px); /* Glassmorphism blur effect */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 2;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white text */
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8); /* Light text color */
+}
+
+.cta .glass-button {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent button background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+    color: rgba(255, 255, 255, 0.9); /* Light text color */
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.cta .glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker on hover */
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Stats Section */
+.stats {
+    padding: 100px 0;
+    background: linear-gradient(rgba(27, 38, 59, 0.9), rgba(27, 38, 59, 0.9)), url('https://cdn.pixabay.com/photo/2015/03/30/19/23/shell-699945_1280.jpg') center/cover no-repeat fixed;
+    color: white;
+    text-align: center;
+}
+
+.stat-box {
+    margin-bottom: 30px;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.stat-number:after {
+    content: '+';
+    position: absolute;
+    font-size: 2rem;
+    top: 0;
+    right: -20px;
+}
+
+.stat-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.stat-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    border-radius: 50%;
+    font-size: 1.8rem;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover .stat-icon {
+    transform: rotateY(360deg);
+    background-color: var(--accent);
+}
+
+/* Service Card with Glassmorphism Effect */
+.service-card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    backdrop-filter: blur(15px); /* Glassmorphism blur effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(8, 8, 8, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9); /* Light text color for visibility */
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3); /* Stronger shadow on hover */
+}
+
+/* Service Icon */
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9); /* Light text color */
+}
+
+/* Service Title */
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9); /* Light text color */
+}
+
+/* Service Description */
+.service-card p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8); /* Subtle text color */
+    line-height: 1.6;
+}
+
+/* Solutions Section with Background Image */
+.services {
+    padding: 100px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('assests/Scaffolding\ HomePage.jpg') center/cover no-repeat; /* Add scaffolding background */
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 80px 0 20px;
+    position: relative; /* Ensure it stays in the flow of the document */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+.footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Ensure the footer is visible even if the content is short */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Push the footer to the bottom */
+}
+
+/* Navbar */
+.navbar-brand img {
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 10px;
+    border-radius: 0; /* Ensure no rounding is applied */
+    transition: transform 0.3s ease; /* Keep the hover effect */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Adds a hover effect */
+}
+
+/* Navbar Links */
+.nav-link {
+    font-size: 19px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    color: black; /* Change text color */
+    margin-left: 25px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color); /* Change color on hover */
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover:before, 
+.nav-link.active:before {
+    width: 100%;
+}
+
+.show-less-button {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 30px; /* Adjust logo size for smaller screens */
+    }
+}
+
+/* Default Navbar Styles */
+.navbar {
+    background: rgba(255, 255, 255, 0.9); /* Add a semi-transparent background */
+    z-index: 1000; /* Ensure the navbar is above other elements */
+    transition: all 0.3s ease; /* Smooth transition for background changes */
+}
+
+/* Navbar when scrolled */
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.9); /* Keep the same background for consistency */
+    backdrop-filter: blur(10px); /* Add a blur effect for glassmorphism */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add a subtle border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+/* Navbar Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-toggler {
+        font-size: 1.5rem; /* Ensure the hamburger icon is large enough */
+        color: black; /* Ensure the icon is visible */
+    }
+
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.95); /* Add a background to the dropdown menu */
+        border-radius: 10px; /* Add rounded corners for a modern look */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Adjust font size for links */
+        color: black; /* Ensure links are visible */
+        margin: 10px 0; /* Add spacing between links */
+    }
+
+    .nav-link:hover {
+        color: var(--primary-color); /* Change color on hover */
+    }
+}
+
+/* Navbar Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0; /* Reduce padding for smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem; /* Adjust font size for the brand */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Reduce font size for links */
+        margin-left: 15px; /* Reduce spacing between links */
+    }
+
+    .navbar-toggler {
+        font-size: 1.2rem; /* Adjust size of the toggler icon */
+    }
+}
+
+/* Hero Section Mobile Styles */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center; /* Center-align content for mobile */
+        padding: 50px 20px; /* Add padding for better spacing */
+    }
+
+    .hero-title {
+        font-size: 2rem; /* Reduce font size for the title */
+        line-height: 1.3;
+    }
+
+    .hero-text {
+        font-size: 1rem; /* Adjust font size for the text */
+        margin-bottom: 20px;
+    }
+
+    .hero-btns {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .hero-image {
+        margin-top: 20px;
+        max-width: 80%; /* Reduce image size for mobile */
+        border-radius: 15px; /* Keep rounded corners */
+    }
+}
+
+/* General Mobile Adjustments */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 50px 0; /* Reduce section padding for smaller screens */
+    }
+
+    .section-title h2 {
+        font-size: 2rem; /* Adjust section title size */
+    }
+
+    .section-title p {
+        font-size: 0.9rem; /* Adjust section subtitle size */
+    }
+}
+
+/* Add margin to the hero title to separate it from the navbar */
+.hero-title {
+    margin-top: 80px; /* Add space between the heading and the navbar */
+    font-size: 3rem; /* Ensure the font size remains consistent */
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        margin-top: 100px; /* Increase margin for smaller screens */
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    padding: 10px 0; /* Adjust padding when scrolled */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.nav-link {
+    color: var(--dark-color);
+    font-weight: 500;
+    margin-left: 25px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover:before,
+.nav-link.active:before {
+    width: 100%;
+}
+

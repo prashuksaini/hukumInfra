@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HukumInfra - Global Scaffolding Solutions</title>
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="about-styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assests/logo.png" alt="HukumInfra Logo" style="height: 40px; margin-right: 12px;">
+                HukumInfra
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="solution.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h1 class="hero-title">ABOUT US</h1>
+                    <p class="hero-text">Hukum Infra, a subsidiary of Hukum Corporation, is a leading provider of scaffolding solutions, delivering safe, innovative, and efficient support systems for construction, infrastructure, industrial, and oil & gas projects. Established in 2015, we have built a strong reputation for quality, reliability, and compliance with global safety standards. With over a decade of expertise, we specialize in designing, manufacturing, and supplying advanced scaffolding systems that enhance workplace safety and efficiency. Our commitment to innovation, sustainability, and precision engineering makes us the trusted partner for large-scale projects across India and worldwide.</p>
+                    <h1 class="hero-text">We build the future of construction.</h1>
+                    <div class="hero-btns">
+                        <a href="solution.html" class="glass-button">Our Solutions</a>
+                        <a href="contact.html" class="glass-button">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                    <img src="assests/Aboutus.jpg" alt="Scaffolding Solutions" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave"></div>
+    </section>
+
+    <!-- Add the Glassmorphism CSS -->
+    <style>
+        .glass-panel {
+            color: #fff;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            border-radius: 15px;
+            padding: 32px;
+            backdrop-filter: blur(10px);
+        }
+
+        .glass-button {
+            display: inline-block;
+            padding: 12px 24px;
+            border: 0;
+            text-decoration: none;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(30px);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .glass-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <img src="assests/why choose us.avif" alt="About HukumInfra" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-5" data-aos="fade-left">
+                    <h2 class="mb-4">Why Choose HukumInfra</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Global Leader – Delivering world-class scaffolding solutions in India and worldwide.</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Uncompromised Safety – Compliant with OSHA, ISO, and global safety standards.</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Innovative Designs – Advanced modular scaffolding systems for all types of projects.</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> End-to-End Solutions – From scaffolding rentals to full-service project execution.</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Sustainable & Cost-Effective – Environmentally friendly and optimized for efficiency.</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Skilled Workforce – Highly trained professionals ensuring precision and safety.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <h2>Our Goals</h2>
+                <p>Comprehensive scaffolding systems tailored to meet your project needs.</p>
+            </div>
+            <div class="row">
+                <!-- Service Card 1 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-shield"></i></div>
+                        <h3>Safety First</h3>
+                        <p>We prioritize workplace safety by adhering to global scaffolding standards and implementing rigorous quality checks to ensure secure and reliable structures.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Innovation & Excellence</h3>
+                        <p>Our focus is on continuous innovation, using advanced scaffolding technology and customized solutions to enhance efficiency and adaptability across industries.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Sustainability & Efficiency</h3>
+                        <p>We are committed to eco-friendly scaffolding practices, optimizing material usage and reducing environmental impact while maintaining cost-effective solutions.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Customer-Centric Approach</h3>
+                        <p>Our goal is to deliver tailored scaffolding solutions that meet the unique requirements of each project, ensuring timely execution, quality service, and client satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section-padding">
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+            <h2>Our Clients</h2>
+            <p>Feedback from those who trust our expertise</p>
+        </div>
+        <div class="testimonial-grid" id="client-logos">
+            <!-- Testimonial Cards (Total: 15 for 5 rows x 3 columns) -->
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="assests/our clients/Our Clients/1.jpg" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="assests/our clients/Our Clients/2.jpeg" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="assests/our clients/Our Clients/3.jpg" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="assests/our clients/Our Clients/4.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="assests/our clients/Our Clients/5.jpg" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="600">
+                <img src="assests/our clients/Our Clients/6.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="700">
+                <img src="assests/our clients/Our Clients/7.jpg" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="800">
+                <img src="assests/our clients/Our Clients/8.jpeg" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="900">
+                <img src="assests/our clients/Our Clients/9.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1000">
+                <img src="assests/our clients/Our Clients/10.jpeg" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1100">
+                <img src="assests/our clients/Our Clients/11.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1200">
+                <img src="assests/our clients/Our Clients/12.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1300">
+                <img src="assests/our clients/Our Clients/13.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1400">
+                <img src="assests/our clients/Our Clients/14.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/15.jpg" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/16.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/17.jpeg" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/18.webp" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/19.webp" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/20.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/21.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/22.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/23.png" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/24.jpeg" alt="Client" class="client-img">
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="1500">
+                <img src="assests/our clients/Our Clients/25.png" alt="Client" class="client-img">
+            </div>
+        </div>
+        <button id="showMoreBtn" class="glass-button" onclick="toggleShow()">Show More</button>
+        <button id="showLessBtn" class="glass-button" style="display:none;" onclick="toggleShow()">Show Less</button>
+</section>
+
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="glass-panel">
+            <h2 data-aos="fade-up">Ready to Build Your Future?</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Let's create something amazing together</p>
+            <a href="contact.html" class="glass-button" data-aos="fade-up" data-aos-delay="200">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <h3>HukumInfra</h3>
+                    <p>Empowering construction and industrial projects with world-class scaffolding solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="solution.html">Solutions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Street, Delhi, India</p>
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> info@hukuminfra.com</p>
+                    </div>
+                </div>
+    <style>
+    /* Root Variables */
+    :root {
+        --primary-color: #2563eb;
+        --secondary-color: #3b82f6;
+        --dark-color: #1e293b;
+        --light-color: #f8fafc;
+        --accent-color: #f59e0b;
+        --grey-color: #64748b;
+    }
+
+    /* Base Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: var(--dark-color);
+        background-color: var(--light-color);
+        overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--primary-color);
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        color: var(--secondary-color);
+    }
+
+    .section-padding {
+        padding: 100px 0;
+    }
+
+    .section-title {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .section-title h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .section-title h2:after {
+        content: '';
+        width: 70px;
+        height: 4px;
+        background: var(--primary-color);
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .section-title p {
+        color: var(--grey-color);
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    /* Navbar */
+    .navbar {
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    }
+
+    .navbar.scrolled {
+        background: rgba(255, 255, 255, 0.1); /* Transparent background */
+        backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 10px 0; /* Adjust padding when scrolled */
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: black;
+    }
+
+    .nav-link {
+        color: var (--dark-color);
+        font-weight: 500;
+        margin-left: 25px;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link:before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--primary-color);
+        transition: all 0.3s ease;
+    }
+
+    .nav-link:hover:before, 
+    .nav-link.active:before {
+        width: 100%;
+    }
+
+
+    /* Enhanced Animations */
+    @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes scaleIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes wave {
+            0% { transform: translateX(0) translateY(0); }
+            50% { transform: translateX(-25%) translateY(10px); }
+            100% { transform: translateX(-50%) translateY(0); }
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes fadeInRight {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes fadeInLeft {
+            from { transform: translateX(50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+
+
+
+
+    /* Hero Section */
+    .hero {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+        color: white;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+   
+
+    .hero-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200%;
+            height: 100px;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTQwIDMwMCI+PHBhdGggZmlsbD0iI2Y4ZmFmYyIgZmlsbC1vcGFjaXR5PSIxIiBkPSJNMCAxMjBMNDguMyA1MEw5Ni43IDQwTDE0NSAxMzBMMTkzLjMgMjQwTDI0MS43IDEzMEwyOTAgMTcwTDMzOC4zIDE1MEwzODYuNyAxMzBMNDM1IDE2MEw0ODMuMyAxMjBMNTMxLjcgMTkwTDU4MCAxMTBMNjI4LjMgMTcwTDY3Ni43IDEyMEw3MjUgMTUwTDc3My4zIDEwMEw4MjEuNyAxNzBMODcwIDE5MEw5MTguMyAxMjBMOTY2LjcgMTQwTDEwMTUgMTYwTDEwNjMuMyAxMzBMMTExMS43IDE1MEwxMTYwIDEwMEwxMjA4LjMgMTMwTDEyNTYuNyAxMTBMMTMwNSAxNjBMMTM1My4zIDEyMEwxNDAxLjcgMTYwTDE0NTAgODBMMTQ5OC4zIDE5MEwxNTQ2LjcgMTEwTDE1OTUgMTYwTDE2NDMuMyAxNDBMMTY5MS43IDEzMEwxNzQwIDEwMEwxNzg4LjMgMTUwTDE4MzYuNyAxMzBMMTg4NSAyMDBMMTkzMy4zIDEzMEwxOTgxLjcgMTIwTDIwMzAgOTBMMjA3OC4zIDE1MEwyMTI2LjcgMTgwTDIxNzUgNzBMMjIyMy4zIDE0MEwyMjcxLjcgMTYwTDIzMjAgMTEwTDIzMjAgMzAwTDAgMzAwWiI+PC9wYXRoPjwvc3ZnPg==') repeat-x;
+            animation: wave 15s linear infinite;
+           
+        }
+
+        
+    
+
+
+
+    .hero-title {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .hero-text {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.9;
+    }
+
+    .hero-btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: white;
+        color: var (--primary-color);
+        border-radius: 30px;
+        font-weight: 600;
+        margin-right: 15px;
+        transition: all 0.3s ease;
+        border: 2px solid white;
+    }
+
+    .hero-btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    
+
+    .hero-image {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+
+    /* Features Section */
+    .features {
+        background-color: white;
+    }
+
+    .feature-card {
+        text-align: center;
+        padding: 30px 20px;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        margin-bottom: 30px;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        font-size: 2rem;
+        border-radius: 50%;
+    }
+
+    
+
+    /* Footer */
+    .footer {
+        background-color: var(--dark-color);
+        color: white;
+        padding: 80px 0 20px;
+    }
+
+    .footer h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: white;
+    }
+
+    /* Floating WhatsApp Icon */
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 100px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .whatsapp-float i {
+        margin-top: 16px;
+    }
+
+    /* Add spacing between image and text in the About section for mobile */
+    @media (max-width: 768px) {
+        #about .row {
+            gap: 20px; /* Adds space between the image and text */
+        }
+    }
+
+    /* Reduce space between About and Services sections */
+    #about {
+        margin-bottom: 0px; /* Decrease the bottom margin */
+    }
+    @media (max-width: 768px) {
+        #client-logos .testimonial-card {
+            display: none;
+        }
+        #client-logos .testimonial-card:nth-child(-n+4) {
+            display: block;
+        }
+        #showMoreBtn {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 769px) {
+        #showMoreBtn {
+            display: none;
+        }
+    }
+</style>
+
+    <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Counter animation
+        const counters = document.querySelectorAll('.stat-number');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.dataset.target);
+                    animateCount(entry.target, target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        counters.forEach(counter => observer.observe(counter));
+        
+        function animateCount(el, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                el.textContent = Math.floor(current);
+                if (current >= target) {
+                    el.textContent = target;
+                    clearInterval(timer);
+                }
+            }, 20);
+        }
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // Toggle Show More/Show Less for mobile devices
+        function toggleShow() {
+            const clientLogos = document.querySelectorAll('#client-logos .testimonial-card');
+            const showMoreBtn = document.getElementById('showMoreBtn');
+            const showLessBtn = document.getElementById('showLessBtn');
+            if (showMoreBtn.style.display !== 'none') {
+                clientLogos.forEach((logo, index) => {
+                    if (index >= 4) {
+                        logo.style.display = 'block';
+                    }
+                });
+                showMoreBtn.style.display = 'none';
+                showLessBtn.style.display = 'block';
+            } else {
+                clientLogos.forEach((logo, index) => {
+                    if (index >= 4) {
+                        logo.style.display = 'none';
+                    }
+                });
+                showMoreBtn.style.display = 'block';
+                showLessBtn.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+</script>
+<script>
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+<script>
+    document.addEventListener('click', function (event) {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        // Check if the click is outside the navbar or toggler
+        if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+            if (navbarCollapse.classList.contains('show')) {
+                navbarToggler.click(); // Programmatically trigger the toggler to close the menu
+            }
+        }
+    });
+</script>
+</body>
+</html>
