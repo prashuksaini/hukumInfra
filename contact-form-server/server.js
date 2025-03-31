@@ -9,10 +9,14 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
+// Ensure proper middleware for request handling
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use((req, res, next) => {
+    log.info(`Received request: ${req.method} ${req.url}`);
+    next();
+});
 app.use(express.static(path.join(__dirname, '..')));
 
 // Logger setup
