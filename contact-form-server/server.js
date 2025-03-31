@@ -217,6 +217,12 @@ app.get('/test-email', async (req, res) => {
     }
 });
 
+app.post('/submit-form', (req, res) => {
+    const { name, email, message } = req.body;
+    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+    res.status(200).send('Form submitted successfully!');
+});
+
 // Start server
 app.listen(PORT, async () => {
     log.info(`Server running on port ${PORT}`);
