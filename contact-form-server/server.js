@@ -125,72 +125,10 @@ function createEmailContent(data) {
 }
 
 // Contact form endpoint
-app.post('/send', async (req, res) => {
-    try {
-        log.info('Received contact form submission');
-        log.debug('Form data:', { ...req.body, email: '****' });
-
-        const { name, email, phone, message } = req.body;
-
-        // Validation
-        if (!name || !email || !message) {
-            return res.status(400).json({
-                success: false,
-                message: 'Please provide name, email, and message'
-            });
-        }
-
-        // Email format validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            return res.status(400).json({
-                success: false,
-                message: 'Please provide a valid email address'
-            });
-        }
-
-        // Get transporter
-        const transporter = await createTransporter();
-        if (!transporter) {
-            throw new Error('Email service not available');
-        }
-
-        // Prepare email
-        const { html, text } = createEmailContent(req.body);
-        const mailOptions = {
-            from: {
-                name: 'Hukum Infra Contact Form',
-                address: process.env.GMAIL_USER
-            },
-            to: process.env.RECIPIENT_EMAIL || process.env.GMAIL_USER,
-            replyTo: email,
-            subject: 'New Contact Form Submission - Hukum Infra',
-            text,
-            html,
-            priority: 'high',
-            headers: {
-                'X-Priority': '1',
-                'X-MSMail-Priority': 'High',
-                'Importance': 'High'
-            }
-        };
-
-        // Send email
-        const info = await transporter.sendMail(mailOptions);
-        log.info('Email sent successfully', { messageId: info.messageId });
-
-        res.status(200).json({
-            success: true,
-            message: 'Your message has been sent successfully'
-        });
-
-    } catch (error) {
-        log.error('Failed to process contact form submission', error);
-        res.status(500).json({
-            success: false,
-            message: 'Failed to send message. Please try again later.'
-        });
-    }
+app.post('/send', (req, res) => {
+    const { name, email, phone, subject, message } = req.body;
+    console.log(`Name: ${name}, Email: ${email}, Phone: ${phone}, Subject: ${subject}, Message: ${message}`);
+    res.status(200).json({ success: true, message: 'Form submitted successfully!' });
 });
 
 // Health check endpoint
